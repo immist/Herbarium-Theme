@@ -70,20 +70,6 @@
 	
 <?php endif; ?>
 
-<?php if ( ! comments_open() && ! is_page() ) : ?>
-
-	<div class="comments-container">
-	
-		<div class="comments-inner">
-
-			<p class="no-comments"><?php _e( 'Comments are closed.', 'fukasawa' ); ?></p>
-		
-		</div>
-		
-	</div>
-	
-<?php endif; ?>
-
 <?php $comments_args = array(
 
 	'comment_notes_before' => 
