@@ -268,6 +268,7 @@ body a,
 .main-menu:before,
 .widgets:before,
 .widget + .widget:before,
+.legal:before,
 .credits:before {
 	content: "";
 	display: block;
@@ -1955,21 +1956,25 @@ p.comment-form-author { margin-right: 5%; }
 
 
 /* -------------------------------------------------------------------------------- */
-/*	13. Credits
+/*	13. Credits / Legal
 /* -------------------------------------------------------------------------------- */
 
 
-.credits { font-size: 13px; }
+.credits, .legal{ font-size: 13px; }
 
-.credits p { 
+.credits p, .legal p , .credits li, .legal li{
 	color: #999; 
 	line-height: 160%;
 }
 
-.credits p a { color: #999; }
-.credits p a:hover { color: #666; }
+.credits p a, .legal p a, .credits li a, .legal li a { color: #999; }
+.credits p a:hover, .legal p a:hover, .credits li a:hover, .legal li a:hover { color: #666; }
 
 img#wpstats { display: none; }
+
+.sidebar-menu {
+    list-style-type: none;
+}
 
 
 /* -------------------------------------------------------------------------------- */
