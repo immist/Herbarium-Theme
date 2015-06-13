@@ -102,7 +102,6 @@
 					?>
 				
 					<ul>
-						<li class="post-date"><a href="<?php the_permalink(); ?>"><?php the_date(get_option('date_format')); ?></a></p>
 						<?php if (has_category()) : ?>
 							<li class="post-categories"><?php _e('In','fukasawa'); ?> <?php the_category(', '); ?></li>
 						<?php endif; ?>
@@ -117,36 +116,6 @@
 				</div> <!-- /post-meta-bottom -->
 			
 			</div> <!-- /post-inner -->
-			
-			<?php
-				$prev_post = get_previous_post();
-				$next_post = get_next_post();
-			?>
-			
-			<div class="post-navigation">
-			
-				<?php
-				if (!empty( $prev_post )): ?>
-				
-					<a class="post-nav-prev" title="<?php _e('Previous post', 'fukasawa'); echo ': ' . esc_attr( get_the_title($prev_post) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>">
-						<p>&larr; <?php _e('Previous post', 'fukasawa'); ?></p>
-					</a>
-				<?php endif; ?>
-				
-				<?php
-				if (!empty( $next_post )): ?>
-					
-					<a class="post-nav-next" title="<?php _e('Next post', 'fukasawa'); echo ': ' . esc_attr( get_the_title($next_post) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>">					
-						<p><?php _e('Next post', 'fukasawa'); ?> &rarr;</p>
-					</a>
-			
-				<?php endif; ?>
-				
-				<div class="clear"></div>
-			
-			</div> <!-- /post-navigation -->
-								
-			<?php comments_template( '', true ); ?>
 		
 		</div> <!-- /post -->
 									                        
