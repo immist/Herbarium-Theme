@@ -24,12 +24,7 @@
 			</div> <!-- /post-header -->
 		
 		<?php endif; ?>
-		
-		<div class="post-excerpt">
-		
-			<?php the_excerpt(); ?>
-		
-		</div>
+        
 		
 		<?php if ( empty( $post_title ) ) : ?>
 			    
