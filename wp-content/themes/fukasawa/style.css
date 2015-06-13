@@ -268,7 +268,7 @@ body a,
 .main-menu:before,
 .widgets:before,
 .widget + .widget:before,
-.legal:before,
+.sidebar-menu-wrapper:before,
 .credits:before {
 	content: "";
 	display: block;
@@ -1956,19 +1956,19 @@ p.comment-form-author { margin-right: 5%; }
 
 
 /* -------------------------------------------------------------------------------- */
-/*	13. Credits / Legal
+/*	13. Credits / sidebar-menu-wrapper
 /* -------------------------------------------------------------------------------- */
 
 
-.credits, .legal{ font-size: 13px; }
+.credits, .sidebar-menu-wrapper{ font-size: 13px; }
 
-.credits p, .legal p , .credits li, .legal li{
+.credits p, .sidebar-menu-wrapper p , .credits li, .sidebar-menu-wrapper li{
 	color: #999; 
 	line-height: 160%;
 }
 
-.credits p a, .legal p a, .credits li a, .legal li a { color: #999; }
-.credits p a:hover, .legal p a:hover, .credits li a:hover, .legal li a:hover { color: #666; }
+.credits p a, .sidebar-menu-wrapper p a, .credits li a, .sidebar-menu-wrapper li a { color: #999; }
+.credits p a:hover, .sidebar-menu-wrapper p a:hover, .credits li a:hover, .sidebar-menu-wrapper li a:hover { color: #666; }
 
 img#wpstats { display: none; }
 
@@ -2107,7 +2107,21 @@ img#wpstats { display: none; }
 	}
 	
 	.mobile-menu a:hover { color: #fff; }
-		
+
+    /* sidebar menu */
+    .sidebar-menu li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+    .sidebar-menu-wrapper {
+        position: absolute;
+        top: -70px;
+        right: 10px;
+        font-size: 10px;
+    }
+
+
 	/* nav toggle */
 	
 	.nav-toggle { 

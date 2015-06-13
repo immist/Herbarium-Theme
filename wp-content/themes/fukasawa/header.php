@@ -108,7 +108,7 @@
 			 
 			 </div>
 
-            <div class="legal">
+            <div class="sidebar-menu-wrapper">
 
                 <ul class="sidebar-menu">
 
