@@ -78,7 +78,23 @@
 				</p>
 			
 			</a>
-			
+
+            <ul class="main-menu">
+
+                <?php if ( has_nav_menu( 'language-switcher' ) ) {
+
+                    wp_nav_menu( array(
+
+                        'container' => '',
+                        'items_wrap' => '%3$s',
+                        'theme_location' => 'language-switcher'
+
+                    ) );
+
+                } ?>
+
+            </ul>
+
 			<ul class="main-menu">
 				
 				<?php if ( has_nav_menu( 'primary' ) ) {

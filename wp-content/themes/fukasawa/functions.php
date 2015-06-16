@@ -34,6 +34,9 @@ function fukasawa_setup() {
 
     // Add sidebar menu
     register_nav_menu( 'sidebar', __('Sidebar Menu','fukasawa') );
+
+    // Add language-switcher menu
+    register_nav_menu( 'language-switcher', __('Language Switcher Menu','fukasawa') );
 	
 	// Make the theme translation ready
 	load_theme_textdomain('fukasawa', get_template_directory() . '/languages');
