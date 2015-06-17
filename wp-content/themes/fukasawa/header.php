@@ -144,7 +144,7 @@
                  
                  <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></p>
                  <p>Code is <a href="https://www.github.com/immist/herbarium-theme" target="_blank">Open Source</a></p>
-                 <p>Made with &hearts; by <a href="https://sterzik.io" rel="follow" target="_blank" title="Immanuel Sterzik">Immanuel Sterzik</a></p>
+                 <p>Made with &hearts; by <a href="https://sterzik.io" rel="dofollow" target="_blank" title="Immanuel Sterzik">Immanuel Sterzik</a></p>
 
 			 </div>
 			
